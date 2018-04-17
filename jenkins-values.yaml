@@ -5,7 +5,7 @@
 Master:
   ImageTag: "2.74"
   Memory: "512Mi"
-  HostName: jenkins.acs.az.estrado.io
+  HostName: jenkins.rtpbngqakvm227
   ServiceType: ClusterIP
   InstallPlugins:
       - kubernetes:0.12
@@ -31,9 +31,9 @@ Master:
       kubernetes.io/tls-acme: "true"
 
     TLS:
-      - secretName: jenkins.acs.az.estrado.io
+      - secretName: jenkins.rtpbngqakvm227
         hosts:
-          - jenkins.acs.az.estrado.io
+          - jenkins.rtpbngqakvm227
 
 Agent:
   Enabled: false

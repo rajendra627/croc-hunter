@@ -47,7 +47,7 @@ or *.test.com in A <nginx ingress svc external-IP>
 
 ## Update jenkins.values.yaml
 ```
-Find and replace `jenkins.acs.az.estrado.io` with the DNS name provisioned above
+Find and replace `jenkins.rtpbngqakvm227` with the DNS name provisioned above
 
 helm --namespace jenkins --name jenkins -f ./jenkins-values.yaml install stable/jenkins
 
@@ -126,7 +126,7 @@ printf ${JENKINS_URL}/github-webhook/ | pbcopy
 
 ## Update croc-hunter ingress records
 ```
-Update croc-hunter.acs.az.estrado.io in charts/croc-hunter/values.yaml
+Update croc-hunter.rtpbngqakvm227 in charts/croc-hunter/values.yaml
 
 Configured DNS A record to point to the Nginx Ingress IP
 Once master branch is pushed it should be available at that name
